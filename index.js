@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
+const { start } = require("repl");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
@@ -54,10 +55,9 @@ const questions = [
     name: "license",
     type: "list",
     message: "Please select a license for your project",
-    choices: ["MIT", "Apache License 2.0", "GNU General Public License v3.0"],
+    choices: ["MIT", "Apache License 2.0", "GNU General Public License v3.0", "none"],
   },
 ];
-
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (error) => {
