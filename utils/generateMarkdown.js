@@ -27,6 +27,9 @@ ${data.description}
 The project can be accessed at [${data.repository}](${data.repository})
 
 
+## Contact Details:
+This project was developed by ${data.developer}. Email ${data.contact} to get in touch.
+
 
 `;
 }
