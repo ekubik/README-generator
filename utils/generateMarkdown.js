@@ -14,6 +14,20 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+## Description
+${data.description}
+
+## Technologies used:
+- ${data.technologyOne}
+- ${data.technologyTwo}
+- ${data.technologyThree}
+- ${data.technologyFour}
+
+##  Link:
+The project can be accessed at [${data.repository}](${data.repository})
+
+
+
 `;
 }
 
