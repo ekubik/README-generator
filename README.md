@@ -20,7 +20,7 @@ This project was built with:
 * Node.js 
 
 ## Demonstration:
-To view a demonstration of the application's functionality, please follow <a href="https://watch.screencastify.com/v/q5pmH9zNl4NGpWeztKw8"> this link </a>
+To view a demonstration of the application's functionality, please follow <a href="https://watch.screencastify.com/v/q5pmH9zNl4NGpWeztKw8" target="_blank"> this link </a>
 
 The project can be run from the command line.
 
