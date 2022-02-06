@@ -24,6 +24,10 @@ To view a demonstration of the application's functionality, please follow <a hre
 
 The project can be run from the command line.
 
+The README generated with this application will be stored in the /dist folder, and appear similar to the sample image below:
+
+![Example](./utils/sampleREADME.png)
+
 ## Link:
 The project can be found at <a href="https://github.com/ekubik/README-generator"> https://github.com/ekubik/README-generator </a>
 
