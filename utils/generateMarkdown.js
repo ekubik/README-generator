@@ -2,16 +2,25 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "none") {
-    return `[License](https://img.shields.io/badge/license-${license}-brightgreen)`;
+    switch(license) {
+      case "MIT":
+        return `![License](https://img.shields.io/badge/license-MIT-brightgreen)`;
+        break;
+        case "Apache License 2.0":
+        return `![License](https://img.shields.io/badge/license-Apache-blue)`;
+        break;
+        case "GNU General Public License v3.0":
+        return `![License](https://img.shields.io/badge/license-GPL-yellow)`;
+        break;
   }
   return " ";
-}
+}}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "none") {
-    return "*[License](#license)";
+    return "* [License](#license)";
   }
   return " ";
 }
@@ -35,27 +44,44 @@ function generateMarkdown(data) {
 ## Description
 ${data.description}
 
+
 ## Table of Contents:
 
 * [Technologies](#technologies)
-*
-*
+* [Installation](#installation)
+* [Usage](#usage)
  ${renderLicenseLink(data.license)}
+ * [Link](#link)
+ * [Contact](#contact-details)
+
 
 ## Technologies:
+This project was built using:
 - ${data.technologyOne}
 - ${data.technologyTwo}
 - ${data.technologyThree}
 - ${data.technologyFour}
 
+
+## Installation
+${data.installation}
+
+
+## Usage 
+${data.usage}
+
+
 ${renderLicenseSection(data.license)}
+
 
 ##  Link:
 The project can be accessed at [${data.repository}](${data.repository})
 
 
 ## Contact Details:
-This project was developed by ${data.developer}. Email ${data.contact} to get in touch.
+This project was developed by ${data.developer}. Email ${
+    data.contact
+  } to get in touch.
 
 
 `;

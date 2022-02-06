@@ -36,10 +36,12 @@ const questions = [
     message:
       "Which technologies did you use to build this project (Please enter one only)?",
   },
+  {name: "installation", type: "input", message: "How can the user install and run this project?"},
+  {name: "usage", type: "input", message: "Describe the functionality of the project."},
   {
     name: "repository",
     type: "input",
-    message: "Please enter a link to your project reposistory",
+    message: "Please enter a link to your project repository",
   },
   {
     name: "developer",
